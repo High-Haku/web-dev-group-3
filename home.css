@@ -35,10 +35,6 @@ main{
 }
 
 
-form{
-    
-}
-
 footer{
     background-color: whitesmoke;
     color: black;
@@ -62,10 +58,15 @@ h3{
     justify-content: space-between;
 }
 
-@media screen (max-width: 720px){
+@media (max-width: 720px) {
     #register{
         display: flex;
         flex-direction: column;
+    }
+
+    #sign-up{
+        border: 1px solid transparent;
+        text-align: left;
     }
     
 }
