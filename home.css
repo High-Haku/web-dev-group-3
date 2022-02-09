@@ -30,15 +30,43 @@ main{
     background-size: cover;
 }
 
-#main-container {
+#main-container{
     height: 100vh;
+}
+
+
+form{
+    
 }
 
 footer{
     background-color: whitesmoke;
     color: black;
+    text-align: center;
     font-family: sans-serif;
 }
 
+input {
+    width: 50%;
+    height: 10%;
+}
 
+h3{
+    font-size: 30px;
+    
+
+}
+
+#navbarSupportedContent{
+    display: inline;
+    justify-content: space-between;
+}
+
+@media screen (max-width: 720px){
+    #register{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 
