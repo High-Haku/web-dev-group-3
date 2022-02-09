@@ -1,0 +1,56 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.header-navbar{
+    height: 10%;
+    z-index: 10;
+}
+
+.content{
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.corousel img{
+    /* width: 600px; */
+    height: 350px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+/* tengah */
+
+.card-favorit{
+    margin-top: 30px;
+}
+
+.card-favorit .card {
+    background-color: #3f733f;
+}
+
+.card-favorit .card h5 {
+    color: white;
+    text-align: center;
+}
+
+.card-favorit .card img {
+    height: 200px;
+}
+
+.card-favorit .btn{
+    width: 100%;
+}
+
+
+/* -------------- */
+
+@media screen and (max-width : 1200px) {
+    
+}
+
+@media screen and (max-width : 570px) {
+    
+}

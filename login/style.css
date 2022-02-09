@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.pembungkus {
+    height: 100vh;
+}
+
+.judul {
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+}
+
+.isi{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.isi .row {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 5%;
+    width: 500px;
+}
+
+.input-Login .input-group-text {
+    width: 85px;
+}
+
+
+.login button{
+    width: 300px;
+}
+
+/* end halaman login */
