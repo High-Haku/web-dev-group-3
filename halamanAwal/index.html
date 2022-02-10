@@ -20,13 +20,13 @@
     
     <div class="container-fluid" style="height: 100vh;">
 
-      <div class="container-fluid  bg-success" style="display: flex; justify-content: center;">
+      <!-- <div class="container-fluid  bg-success" style="display: flex; justify-content: center;">
             <div class="container header-navbar position-fixed">
               <div class="row bg-success nav-atas">
                 <div class="col-6">
                     <nav class="navbar navbar-dark">
                           <a class="navbar-brand" href="../login/index.html">
-                            <!-- <img src="asset/undraw_cooking_lyxy.svg" alt="" width="40px" class="d-inline-block align-text-top"> -->
+                             <img src="asset/undraw_cooking_lyxy.svg" alt="" width="40px" class="d-inline-block align-text-top"> 
                             <h1 style="font-family: 'Rowdies', cursive; font-size: 30px;">Resep Sedaaap</h1>
                           </a>
                       </nav>
@@ -52,7 +52,39 @@
                 </div>
             </div>
           </div>
-      </div>
+      </div> -->
+
+      <nav class="navbar navbar-expand-md navbar-light bg-success p-4">
+        <a class="navbar-brand text-white" href="#">World Recipe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recipe
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white" href="#">Indonesian</a>
+                <a class="dropdown-item text-white" href="#">Asians</a>
+                <a class="dropdown-item text-white" href="#">European</a>
+                <a class="dropdown-item text-white" href="#">American</a>
+            </li>
+          </ul>
+          <div id="register">
+            <a href="../login/index.html"><button class="btn btn-primary bg-success border-light my-2 my-sm-0 mr-3" type="login">Login</button></a>
+            <a href="../register/index.html"><button class="btn btn-primary bg-success border-light my-2 my-sm-0" type="sign-up">Sign Up</button></a>
+          </div>
+        </div>
+      </nav>
 
         <div class="container content mt-5">
             <div class="row">
