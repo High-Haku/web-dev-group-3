@@ -1,0 +1,51 @@
+footer{
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+
+}
+
+.nav-link {
+    font:black;
+    font-family: Arial;
+    font-style: bold;
+}
+
+#navbarSupportedContent{
+    display: inline;
+    justify-content: space-between;
+}
+
+@media (max-width: 720px){
+   
+   .card-group {
+       display: flex;
+       flex-direction: column;
+       width: 90%;
+       margin: auto;
+       text-align: center;
+
+   }
+    #register{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+h1{
+    color: black;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    font-family: Arial;
+}
+
+
