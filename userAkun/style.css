@@ -3,3 +3,13 @@
 .icon-user img{
     width: 450px;
 }
+
+#ubah :hover{
+    background-color: honeydew;
+    color: #007E33;
+}
+
+#simpan :hover{
+    background-color: #007E33;
+    color: honeydew;
+}

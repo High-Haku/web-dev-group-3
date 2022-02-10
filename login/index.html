@@ -37,19 +37,19 @@
         </div>
         <div class="input-group my-1 input-Login">
           <span class="input-group-text bg-success" id="inputGroup-sizing-default">Password</span>
-          <input type="text" class="form-control userPassword" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder=".     .   .   .   .   .   .    .     .     .">
+          <input type="text" class="form-control userPassword" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder=".    .   .   .   .   .   .    .     .     .">
         </div>
         <!-- <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="" id="tampilkanPassword">
+          <input class="form-check-input" type="checkbox" value="" id="tampilkanPassword" onclick="tampilkanPassword()">
           <label class="form-check-label" for="tampilkanPassword">
             Tampilkan Password
           </label>
         </div> -->
-        <div class="login">
-          <button type="button" class="btn btn-success" onclick="masuk()">Log In</button>
+        <div class="login mt-3">
+          <button type="button" class="btn btn-success" id="login" onmouseenter="berubahPutih()" onmouseleave="kembaliHijau()" onclick="masuk()" style="font-weight: bolder;" >Log In</button>
         </div>
         <div class="login mt-2">
-          <a href="../register/index.html"><button type="button" class="btn btn-success">Register</button></a>
+          <a href="../register/index.html"><button type="button" class="btn btn-light" id="register" onmouseenter="berubah()" onmouseleave="kembaliPutih()" style="font-weight: bolder; border: 1px solid;">Register</button></a>
         </div>
       </div>
     </div>
