@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Teko:wght@300&display=swap');
+
+
+.navbar-brand {
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+
+}
+
+.nav-link {
+    font:black;
+    font-family: Arial;
+    font-style: bold;
+}
+
+.form-inline{
+    justify-content: space-between;
+}
+
+.form-control {
+    border: solid white;
+}
+
+main{
+    background-image: url("img/main.png");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#main-container{
+    height: 100vh;
+}
+
+
+footer{
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+input {
+    width: 50%;
+    height: 10%;
+}
+
+h3{
+    font-size: 30px;
+    
+
+}
+
+#navbarSupportedContent{
+    display: inline;
+    justify-content: space-between;
+}
+
+@media (max-width: 720px) {
+    #register{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sign-up{
+        border: 1px solid transparent;
+        text-align: left;
+    }
+    
+}
+
