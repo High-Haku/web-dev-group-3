@@ -25,7 +25,14 @@ footer{
 
 @media (max-width: 720px){
    
-   
+   .card-group {
+       display: flex;
+       flex-direction: column;
+       width: 90%;
+       margin: auto;
+       text-align: center;
+
+   }
     #register{
         display: flex;
         flex-direction: column;
