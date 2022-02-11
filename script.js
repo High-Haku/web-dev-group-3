@@ -2,7 +2,7 @@
 
 function deletLogin(){
     localStorage.removeItem('login');
-    location.replace('../login/index.html')
+    location.replace('./index.html')
 }
 
 let getLogin = JSON.parse(localStorage.getItem("login"))
@@ -10,11 +10,11 @@ let sateAyam = document.querySelector('.sateAyam');
 sateAyam.onclick = sate;
 function sate (){
     if(getLogin){
-        location.replace('../resepFavorite/sateAyam/index.html')
+        location.replace('./resepFavorite/sateAyam/index.html')
     }else{
         let goLogin = confirm('Login Dulu Guys')
         if(goLogin){
-            location.replace('../login/index.html')
+            location.replace('./login/index.html')
         }   
     }
 }
@@ -34,7 +34,7 @@ let western = document.querySelector('#west')
 
 function indFood(){
     if(getLogin){
-        location.replace('../listResep/indonesiaResep/index.html')//jgn lupa di ubah ke list resept
+        location.replace('./listResep/indonesiaResep/index.html')//jgn lupa di ubah ke list resept
     }else{
         let goLogin = confirm('Login Dulu Guys')
         if(goLogin){
@@ -45,7 +45,7 @@ function indFood(){
 
 function westertFood(){
     if(getLogin){
-        location.replace('../listResep/westernResep/index.html')//jgn lupa di ubah ke list resep
+        location.replace('./listResep/westernResep/index.html')//jgn lupa di ubah ke list resep
     }else{
         let goLogin = confirm('Login Dulu Guys')
         if(goLogin){
