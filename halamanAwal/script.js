@@ -34,7 +34,7 @@ let western = document.querySelector('#west')
 
 function indFood(){
     if(getLogin){
-        location.replace('../resepFavorite/sateAyam/index.html')//jgn lupa di ubah ke list resep
+        location.replace('../listResep/indonesiaResep/index.html')//jgn lupa di ubah ke list resept
     }else{
         let goLogin = confirm('Login Dulu Guys')
         if(goLogin){
@@ -45,7 +45,7 @@ function indFood(){
 
 function westertFood(){
     if(getLogin){
-        location.replace('../resepFavorite/sateAyam/index.html')//jgn lupa di ubah ke list resep
+        location.replace('../listResep/westernResep/index.html')//jgn lupa di ubah ke list resep
     }else{
         let goLogin = confirm('Login Dulu Guys')
         if(goLogin){

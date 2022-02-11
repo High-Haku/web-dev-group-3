@@ -1,0 +1,16 @@
+.card-favorit .card {
+    background-color: #007E33;
+}
+
+.card-favorit .card h5 {
+    color: #007E33;
+    text-align: center;
+}
+
+.card-favorit .card img {
+    height: 200px;
+}
+
+.card-favorit .btn{
+    width: 100%;
+}
