@@ -13,7 +13,7 @@ function masuk(){
 
     if(userEmail == dataLocalStorage.email && userPassword == dataLocalStorage.password){
         alert('Kamu berhasil login')
-        location.replace('../halamanAwal/index.html')
+        location.replace('../index.html')
     } else{
         alert('Cek Ulang Email & Password')
     }

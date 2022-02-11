@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>List Resep</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid bg-success" style="position: fixed; z-index: 10; padding: 0px;">
+        <div class="row">
+          <div class="col">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand text-white" href="#">World Recipe</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link text-white" href="../halamanAwal/index.html">Home</a>
+                        </li>
+                    </div>
+                    <div class="dropdown" id="dropMenu">
+                      <button class="btn btn-secondary dropdown-toggle bg-success" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png" style="width: 40px;"/>
+                      </button>
+                      <ul class="dropdown-menu bg-success" aria-labelledby="dropdownMenuButton1">
+                        <li style="display: inline;"><a class="dropdown-item" href="../userAkun/index.html"><img style="width: 20px;" src="https://img.icons8.com/ios-filled/50/000000/checked-user-male.png"/> Akun</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="deletLogin()"><img style="width: 20px;" src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/000000/external-log-out-user-interface-kmg-design-glyph-kmg-design.png"/> Log Out</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" style="height: 100vh;">
+        <div class="container d-flex" style="justify-content: center;">
+          <h1 style="margin-top: 100px; font-family: 'Rowdies', cursive; font-size: 30px; font-size: 50px;">Indonesian Food</h1>
+        </div>
+  
+        <div class="container card-favorit mt-5" id="listFavorite">
+          <div class="row">
+            <div class="col-2">
+              <div class="card">
+                <img src="https://media.istockphoto.com/photos/pork-satay-picture-id485078228?k=20&m=485078228&s=612x612&w=0&h=4JDdmaLxIl8R79sMUVcvQPOSyR7K6LhJgu9r5vwbzIE=" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sate Ayam</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-success sateAyam">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://media.istockphoto.com/photos/roasted-chicken-drumsticks-picture-id596783110?k=20&m=596783110&s=612x612&w=0&h=A4b2BK4RDNzgNEZ0luosdAU4R8zCaCIhRXpbB_bKlmE=" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ayam Bakar</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-success sateAyam" onclick="sate()">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhZ2hldHRpfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Spaghetti</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-success sateAyam" onclick="sate()">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1611171711791-b34fa42e9fc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0ZWFrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Steak</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://media.istockphoto.com/photos/chicken-and-herb-soup-in-pot-picture-id679222500?k=20&m=679222500&s=612x612&w=0&h=4i6Biqvr3smTacqCu3c94Hsd2AJVSE4tAW-HQBCZvZ8=" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Opor Ayam</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://media.istockphoto.com/photos/steamed-pork-noodle-picture-id517644347?k=20&m=517644347&s=612x612&w=0&h=ty2wEet1q9nK9IyEt6iDXnhxlBqATRPUTAut95-f9CU=" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pempek</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-5" style="height: 100vh;">
+      
+            <div class="container card-favorit" id="listFavorite">
+              <div class="row">
+                <div class="col-2">
+                  <div class="card">
+                    <img src="https://media.istockphoto.com/photos/pork-satay-picture-id485078228?k=20&m=485078228&s=612x612&w=0&h=4JDdmaLxIl8R79sMUVcvQPOSyR7K6LhJgu9r5vwbzIE=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sate Ayam</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-success sateAyam">Lihat Resep</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="card">
+                    <img src="https://media.istockphoto.com/photos/roasted-chicken-drumsticks-picture-id596783110?k=20&m=596783110&s=612x612&w=0&h=A4b2BK4RDNzgNEZ0luosdAU4R8zCaCIhRXpbB_bKlmE=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Bakar</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-success sateAyam" onclick="sate()">Lihat Resep</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhZ2hldHRpfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Spaghetti</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-success sateAyam" onclick="sate()">Lihat Resep</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="card">
+                    <img src="https://images.unsplash.com/photo-1611171711791-b34fa42e9fc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0ZWFrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Steak</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="card">
+                    <img src="https://media.istockphoto.com/photos/chicken-and-herb-soup-in-pot-picture-id679222500?k=20&m=679222500&s=612x612&w=0&h=4i6Biqvr3smTacqCu3c94Hsd2AJVSE4tAW-HQBCZvZ8=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Opor Ayam</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="card">
+                    <img src="https://media.istockphoto.com/photos/steamed-pork-noodle-picture-id517644347?k=20&m=517644347&s=612x612&w=0&h=ty2wEet1q9nK9IyEt6iDXnhxlBqATRPUTAut95-f9CU=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pempek</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="text-center">
+                <div class="container text-white justify-content-center p-3 justify-content-center" id="footer">
+                <p style="color: #007E33;" >Copyright&copy; Team 3. 2022. All Rights Reserved</p>
+            </div>
+            </footer>
+            </div>
+        
+            <script src="script.js"></script>
+            </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
