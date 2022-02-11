@@ -18,7 +18,7 @@
 </head>
 <body>
     
-    <div class="container-fluid" style="height: 100vh;">
+    <div class="container-fluid" style="height: 100vh; padding: 0px;">
 
       <!-- <div class="container-fluid  bg-success" style="display: flex; justify-content: center;">
             <div class="container header-navbar position-fixed">
@@ -54,40 +54,60 @@
           </div>
       </div> -->
 
-      <nav class="navbar navbar-expand-md navbar-light bg-success p-4">
-        <a class="navbar-brand text-white" href="#">World Recipe</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="../halamanAwal/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../profile/profile.html">Profile</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Recipe
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-white" href="#">Indonesian</a>
-                <a class="dropdown-item text-white" href="#">Asians</a>
-                <a class="dropdown-item text-white" href="#">European</a>
-                <a class="dropdown-item text-white" href="#">American</a>
-            </li>
-          </ul>
-          <div id="register">
-            <a href="../login/index.html"><button class="btn btn-primary bg-success border-light my-2 my-sm-0 mr-3" type="login">Login</button></a>
-            <a href="../register/index.html"><button class="btn btn-primary bg-success border-light my-2 my-sm-0" type="sign-up">Sign Up</button></a>
+        <div class="container-fluid bg-success" style="position: fixed; z-index: 10; padding: 0px;">
+          <div class="row">
+            <div class="col">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                      <a class="navbar-brand text-white" href="#">World Recipe</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link text-white" href="../halamanAwal/index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="../profile/profile.html">Profile</a>
+                          </li>
+                          <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              List Recepe
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" id="ind" onclick="indFood()" href="#">Indonesian Food</a></li>
+                              <li><a class="dropdown-item" id="west" onclick="westertFood()" href="#">Western Food</a></li>
+                            </ul>
+                          </div>
+                        </ul>
+                        <div id="register">
+                          <a href="../login/index.html"><button class="btn btn-primary bg-success border-light my-2 my-sm-0 mr-3" type="login">Login</button></a>
+                          <a href="../register/index.html"><button class="btn btn-primary bg-success border-light my-2 my-sm-0" type="sign-up">Sign Up</button></a>
+                        </div>
+                      </div>
+                      <div class="dropdown" id="dropMenu">
+                        <button class="btn btn-secondary dropdown-toggle bg-success" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png" style="width: 40px;"/>
+                        </button>
+                        <ul class="dropdown-menu bg-success" aria-labelledby="dropdownMenuButton1">
+                          <li style="display: inline;"><a class="dropdown-item" href="../userAkun/index.html"><img style="width: 20px;" src="https://img.icons8.com/ios-filled/50/000000/checked-user-male.png"/> Akun</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="deletLogin()"><img style="width: 20px;" src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/000000/external-log-out-user-interface-kmg-design-glyph-kmg-design.png"/> Log Out</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
 
         <div class="container content">
-            <div class="row">
+            <div class="row" style="margin-top: 120px;">
               <div class="col-5" style="display: flex; align-items: center;">
                 <div class="prolog">
                   <h1>Cari inspirasi masak hari ini?</h1>
@@ -134,7 +154,7 @@
         <h1 style="margin-top: 70px; font-family: 'Rowdies', cursive; font-size: 30px; font-size: 50px;">Resep Favorite</h1>
       </div>
 
-      <div class="container card-favorit">
+      <div class="container card-favorit" id="listFavorite">
         <div class="row">
           <div class="col-2">
             <div class="card">
@@ -142,7 +162,7 @@
               <div class="card-body">
                 <h5 class="card-title">Sate Ayam</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="#" class="btn btn-success" id="sateAyam">Lihat Resep</a>
+                <a href="#" class="btn btn-success sateAyam">Lihat Resep</a>
               </div>
             </div>
           </div>
@@ -152,7 +172,7 @@
               <div class="card-body">
                 <h5 class="card-title">Ayam Bakar</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="../resepFavorite/ayamBakar/index.html" class="btn btn-success">Lihat Resep</a>
+                <a href="#" class="btn btn-success sateAyam" onclick="sate()">Lihat Resep</a>
               </div>
             </div>
           </div>
@@ -162,7 +182,7 @@
               <div class="card-body">
                 <h5 class="card-title">Spaghetti</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="../resepFavorite/Spaghetti/index.html" class="btn btn-success">Lihat Resep</a>
+                <a href="#" class="btn btn-success sateAyam" onclick="sate()">Lihat Resep</a>
               </div>
             </div>
           </div>
@@ -172,7 +192,7 @@
               <div class="card-body">
                 <h5 class="card-title">Steak</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="../resepFavorite/steak/index.html" class="btn btn-success">Lihat Resep</a>
+                <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
               </div>
             </div>
           </div>
@@ -182,7 +202,7 @@
               <div class="card-body">
                 <h5 class="card-title">Opor Ayam</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="../resepFavorite/oporAyam/index.html" class="btn btn-success">Lihat Resep</a>
+                <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
               </div>
             </div>
           </div>
@@ -192,7 +212,7 @@
               <div class="card-body">
                 <h5 class="card-title">Pempek</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                <a href="../resepFavorite/pempek/index.html" class="btn btn-success">Lihat Resep</a>
+                <a href="#" class="btn btn-success" onclick="sate()">Lihat Resep</a>
               </div>
             </div>
           </div>
